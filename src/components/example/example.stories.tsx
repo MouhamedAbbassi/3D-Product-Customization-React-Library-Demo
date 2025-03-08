@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import {Example} from "./example.tsx";
+import Example from "./example.tsx";
 import "../../index.ts"
 import "../../index.css"
 const meta: Meta<typeof Example> = {

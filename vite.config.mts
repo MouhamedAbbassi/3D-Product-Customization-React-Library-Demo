@@ -3,13 +3,17 @@ import react from "@vitejs/plugin-react-swc";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react(), dts(),
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+    }),
   ],
   build: {
     lib: {
       entry: "src/index.ts",
       name: "3DConfiguratorComponentLibrary",
-      formats: ["es", "cjs", "umd"],
+      formats: ["es", "umd"],
       fileName: (format: string) => `index.${format}.js`
     },
     rollupOptions: {

@@ -1,24 +1,31 @@
 {
+  "files": [
+    "dist",
+    "dist/index.css"
+  ],
   "name": "3d-configurator-component-library",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.2.2",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && postcss src/index.css -o dist/index.css",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.0.4",
     "@tailwindcss/postcss": "^4.0.8",
     "@tailwindcss/vite": "^4.0.8",
     "3d-configurator-component-library": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "three": "^0.174.0",
     "vite-plugin-dts": "^4.5.0",
     "vite-plugin-tailwind": "^0.0.4"
   },

@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# 3D Configurator Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This library provides a 3D configurator component for React applications, built using `@react-three/fiber` and `three.js`. The main component, `GLBViewer`, allows you to load and customize GLB models interactively.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+To use this library in your project, you need to install it along with its peer dependencies.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```sh
+npm install 3d-configurator-component-library
+npm install react@^19.0.0 react-dom@^19.0.0
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Here is an example of how to use the `GLBViewer` component in your React application:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```jsx
+import React from 'react';
+import { GLBViewer } from '3d-configurator-component-library';
+
+function App() {
+  return (
+    <div className="App">
+      <GLBViewer glbUrl="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb" />
+    </div>
+  );
+}
+
+export default App;
 ```
+
+## GLBViewer Component
+
+The `GLBViewer` component allows you to load and customize a GLB model.
+
+### Props
+
+- `glbUrl`: The URL of the GLB model to load.
+
+### Customization
+
+The `GLBViewer` component provides an interface to select and customize parts of the model. You can select different parts and change their materials interactively.
+
+### Development
+
+To run the library locally for development:
+
+```sh
+npm install
+npm run dev
+```
+
+To build the library:
+
+```sh
+npm run build
+```
+
+To run Storybook:
+
+```sh
+npm run storybook
+```
+
+To build Storybook:
+
+```sh
+npm run build-storybook
+```
+
+## License
+
+This project is licensed under the MIT License.
