@@ -6,7 +6,7 @@ import GLBViewer from './components/glb/GLBViewer.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     
-    <GLBViewer glbUrl="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb" />
+    <GLBViewer glbUrl="/public/chari.glb" />
 
   </StrictMode>,
 )
