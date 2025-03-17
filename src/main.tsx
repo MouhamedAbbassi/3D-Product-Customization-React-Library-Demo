@@ -6,7 +6,7 @@ import GLBViewer from './components/glb/GLBViewer.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     
-    <GLBViewer glbUrl="/public/cube.glb" />
+    <GLBViewer glbUrl="/public/armchair.glb" />
 
   </StrictMode>,
 )

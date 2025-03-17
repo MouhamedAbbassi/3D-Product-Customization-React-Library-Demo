@@ -1,34 +1,122 @@
 {
-    "materials": {
-      "yellowCone": {
+  "materials": [
+    {
+      "name": "material_cone_1",
+      "id": "uuid_material_cone_1",
+      "data": {
+        "color": "#000000",
         "type": "MeshStandardMaterial",
-        "color": "#FFFF00",
+        "emissive": 0,
         "roughness": 0.5,
-        "metalness": 0
-      },
-      "redCone": {
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_cone_2",
+      "id": "uuid_material_cone_2",
+      "data": {
+        "color": "#FF0830",
         "type": "MeshStandardMaterial",
-        "color": "#FF0000",
+        "emissive": 0,
         "roughness": 0.5,
-        "metalness": 0
-      },
-      "blueCube": {
-        "type": "MeshStandardMaterial",
-        "color": "#0000FF",
-        "roughness": 0.5,
-        "metalness": 0
-      },
-      "greenCube": {
-        "type": "MeshStandardMaterial",
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_cube_1",
+      "id": "uuid_material_cube_1",
+      "data": {
         "color": "#00FF00",
-        "roughness": 0.5,
-        "metalness": 0
-      },
-      "pinkCube": {
         "type": "MeshStandardMaterial",
-        "color": "#FFC0CB",
+        "emissive": 0,
         "roughness": 0.5,
-        "metalness": 0
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_cube_2",
+      "id": "uuid_material_cube_2",
+      "data": {
+        "color": "#FF0000",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_cushion_1",
+      "id": "uuid_material_cushion_1",
+      "data": {
+        "color": "#a35061",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_cushion_2",
+      "id": "uuid_material_cushion_2",
+      "data": {
+        "color": "#AF0741",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_seat_1",
+      "id": "uuid_material_seat_1",
+      "data": {
+        "color": "#BCAE99",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_seat_2",
+      "id": "uuid_material_seat_2",
+      "data": {
+        "color": "#BCA570",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
+      }
+    },
+    {
+      "name": "material_tttttttttttttttttttttttttttt",
+      "id": "uuid_material_seat_3",
+      "data": {
+        "color": "#000000",
+        "type": "MeshStandardMaterial",
+        "emissive": 0,
+        "roughness": 0.5,
+        "opacity": 1,
+        "transparent": false,
+        "flatShading": false
       }
     }
-  }
+    
+  ]
+}

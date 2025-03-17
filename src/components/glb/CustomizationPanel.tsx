@@ -18,17 +18,16 @@ const CustomizationPanel: React.FC<CustomizationPanelProps> = ({
 }) => {
   return (
     <div className="w-full md:w-64 h-[460px] max-sm:h-[250px] p-4 bg-white rounded-lg shadow-sm max-h-[460px] overflow-y-auto">
-      <h2 className="text-lg font-semibold mb-3">Customize Model</h2>
       <div>
-        <h3 className="font-medium">Parts:</h3>
+        <h3 className="flex justify-start font-extrabold">Parts:</h3>
         <div className="flex flex-col gap-2 mt-2">
           {Object.keys(customizableParts).map((part, index) => (
-            <div key={index} className="flex flex-col gap-1">
+            <div key={index} className="flex flex-col gap-2">
               {/* Button for selecting a part */}
               <button
                 onClick={() => handlePartSelect(part)}
-                className={`px-4 py-2 rounded-lg text-left transition ${
-                  selectedPart === part ? "bg-[#1A4044] text-white" : "bg-gray-200 hover:bg-[#567275]"
+                className={` font-bold text-[#1A4044] bg-gray-50 w-fit px-4 py-2 my-2 rounded-lg text-left transition ${
+                  selectedPart === part ? "bg-gray-100 hover:bg-[#bfcccd]" : " hover:bg-[#bfcccd]"
                 }`}
               >
                 {part || `Part ${index + 1}`}
@@ -40,7 +39,7 @@ const CustomizationPanel: React.FC<CustomizationPanelProps> = ({
                     <button
                       key={matIndex}
                       onClick={() => handleMaterialSelect(material)}
-                      className="w-10 h-10 rounded-full border-2"
+                      className="w-10 h-10 rounded-b-full rounded-r-full border-l-2"
                       style={{
                         backgroundColor: (material as THREE.MeshStandardMaterial).color.getStyle(),
                       }}
