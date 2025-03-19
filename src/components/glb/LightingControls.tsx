@@ -19,7 +19,7 @@ const LightingControls: React.FC<LightingControlsProps> = ({
   return (
     <div>
       {/* Lighting control sliders */}
-      <div className="flex flex-row justify-center gap-32 mt-8 max-sm:gap-4 max-sm:mt-14 ">
+      <div className="flex flex-row justify-center gap-32 mt-4 max-sm:gap-2 max-sm:mt-8 ">
         <div className="flex flex-col">
           <label className="font-light text-[#1A4044] mb-1">
             Ambient Light: {ambientLightIntensity}
@@ -30,10 +30,11 @@ const LightingControls: React.FC<LightingControlsProps> = ({
             max="5"
             step="0.1"
             value={ambientLightIntensity}
+            defaultValue={1}
             onChange={(e) =>
               setAmbientLightIntensity(parseFloat(e.target.value))
             }
-            className="h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            className="h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
         </div>
         <div className="flex flex-col">
@@ -46,10 +47,11 @@ const LightingControls: React.FC<LightingControlsProps> = ({
             max="5"
             step="0.1"
             value={directionalLightIntensity}
+            defaultValue={1}
             onChange={(e) =>
               setDirectionalLightIntensity(parseFloat(e.target.value))
             }
-            className="h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer "
+            className="h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer "
           />
         </div>
       </div>
