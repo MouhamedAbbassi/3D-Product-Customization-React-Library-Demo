@@ -5,7 +5,7 @@
   ],
   "name": "3d-configurator-library",
   "private": false,
-  "version": "0.4.2",
+  "version": "0.4.3",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",
@@ -19,6 +19,7 @@
     "publish": "node publish.js"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.5",
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
     "@tailwindcss/postcss": "^4.0.8",
